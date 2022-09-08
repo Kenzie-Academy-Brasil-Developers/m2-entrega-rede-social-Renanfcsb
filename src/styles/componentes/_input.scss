@@ -1,0 +1,22 @@
+@mixin input-default{
+    background-color: $whiteFixed;
+    width: 297px;
+    height: 52px;
+    border: 2px solid $grey-4;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: "Inter";
+    line-height: 19px;
+    font-weight: 400;
+    color: $grey-3;
+    padding: 28px 21px 29px;
+    gap: 10px;
+    &:hover{
+        border: 2px solid $brand-1;
+    }
+}
+
+
+.input-default{
+    @include input-default();
+}

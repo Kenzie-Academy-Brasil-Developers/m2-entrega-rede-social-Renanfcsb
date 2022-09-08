@@ -1,0 +1,246 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, b, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, textarea, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.title-1 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.title-2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.text-1 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.text-2 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.text-3 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.font-button-primary {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  font-style: normal;
+  font-family: "Inter";
+}
+
+.button-primary {
+  width: 54px;
+  height: 38px;
+  border-radius: 4px;
+  background-color: #364FC7;
+  border: 2px solid #364FC7;
+  color: #fffFfF;
+}
+.button-primary:hover {
+  background-color: #4263EB;
+}
+
+.button-grey-1 {
+  width: 54px;
+  height: 38px;
+  border-radius: 4px;
+  color: #fffFfF;
+  background-color: #212529;
+  border: 2px solid #212529;
+}
+.button-grey-1:hover {
+  background-color: #0a0c0d;
+}
+
+.button-white-fixed {
+  width: 54px;
+  height: 38px;
+  border-radius: 4px;
+  color: #212529;
+  background-color: #fffFfF;
+  border: 2px solid #fffFfF;
+}
+.button-white-fixed:hover {
+  background-color: #f8f9fa;
+}
+
+.button-outline-medium {
+  width: 54px;
+  height: 28px;
+  border: 1px solid #212529;
+  background-color: #fffFfF;
+  border-radius: 2px;
+}
+.button-outline-medium:hover {
+  color: #4263EB;
+  background-color: #EDF2FF;
+  border: 1px solid #4263EB;
+}
+.button-outline-medium:focus {
+  color: #fffFfF;
+  width: 89px;
+  background-color: #4263EB;
+}
+
+.button-disable {
+  width: 54px;
+  height: 38px;
+  border-radius: 4px;
+  background-color: #dee2e6;
+  border: 2px solid #dee2e6;
+}
+
+.input-default {
+  background-color: #fffFfF;
+  width: 297px;
+  height: 52px;
+  border: 2px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: "Inter";
+  line-height: 19px;
+  font-weight: 400;
+  color: #868E96;
+  padding: 28px 21px 29px;
+  gap: 10px;
+}
+.input-default:hover {
+  border: 2px solid #4263EB;
+}
+
+.textarea-default {
+  background-color: #fffFfF;
+  width: 300px;
+  height: 130px;
+  padding: 26px 19px 26px;
+  border: 2px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: "Inter";
+  line-height: 19px;
+  font-weight: 400;
+  color: #868E96;
+}
+.textarea-default:hover {
+  border: 2px solid #4263EB;
+}
+
+.modal-default {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modal-default .modal-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fffFfF;
+  border-radius: 8px;
+  padding: 11px 15px;
+}
+.modal-default .modal-card .modal-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.modal-default .modal-card .modal-header .modal-header-left {
+  display: flex;
+  flex-direction: row;
+  padding: 40px 24px;
+  gap: 8px;
+}
+.modal-default .modal-card .modal-header .modal-header-left > img {
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+}
+.modal-default .modal-card .modal-header .modal-header-left > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.modal-default .modal-card .modal-header .modal-header-button-close {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.modal-default .modal-card .modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto 40px;
+}
+
+.show-modal {
+  display: flex;
+}/*# sourceMappingURL=globalcomponentes.css.map */

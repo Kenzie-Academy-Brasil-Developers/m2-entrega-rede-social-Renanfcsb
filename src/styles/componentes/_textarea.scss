@@ -1,0 +1,20 @@
+@mixin textarea-default{
+    background-color: $whiteFixed;
+    width: 300px;
+    height: 130px;
+    padding: 26px 19px 26px;
+    border: 2px solid $grey-4;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: "Inter";
+    line-height: 19px;
+    font-weight: 400;
+    color: $grey-3;
+    &:hover{
+        border: 2px solid $brand-1;
+    }
+}
+
+.textarea-default{
+    @include textarea-default();
+}

@@ -1,0 +1,67 @@
+@mixin button-default {
+    width: 54px;
+    height: 38px;
+    border-radius: 4px;
+   
+}
+
+
+.button-primary{
+    @include button-default();
+    background-color: $brand-2;
+    border: 2px solid $brand-2;
+    color:$whiteFixed;
+
+    &:hover{
+        background-color: $brand-1;
+    }
+}
+
+.button-grey-1{
+    @include button-default();
+    color:$whiteFixed;
+    background-color: $grey-1;
+    border: 2px solid $grey-1;
+
+    &:hover{
+        background-color: $grey-0;
+    }
+}
+
+.button-white-fixed{
+    @include button-default();
+    color: $grey-1;
+    background-color: $whiteFixed;
+    border: 2px solid $whiteFixed;
+    &:hover{
+        background-color: $grey-5;
+    }
+}
+
+.button-outline-medium{
+    width: 54px;
+    height: 28px;
+    border: 1px solid $grey-1;
+    background-color: $whiteFixed;
+    border-radius: 2px;
+    &:hover{
+        color:$brand-1;
+        background-color: $brand-3;
+        border: 1px solid $brand-1;
+    }
+    &:focus{
+        color:$whiteFixed;
+        width: 89px;
+        background-color: $brand-1;
+    }
+
+}
+
+.button-disable{
+    @include button-default();
+
+    background-color: $grey-4;
+    border:2px solid $grey-4;
+    
+
+}
