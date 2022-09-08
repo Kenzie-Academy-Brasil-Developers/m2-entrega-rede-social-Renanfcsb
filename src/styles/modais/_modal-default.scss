@@ -1,4 +1,4 @@
-.modal-default{
+@mixin modal-default {
     height: 100%;
     width: 100%;
     background-color: $grey-opacity-1;
@@ -8,6 +8,12 @@
     display: none;
     align-items: center;
     justify-content: center;
+}
+
+.modal-default{
+
+    @include modal-default();
+    
 
     .modal-card{
         display: flex;
