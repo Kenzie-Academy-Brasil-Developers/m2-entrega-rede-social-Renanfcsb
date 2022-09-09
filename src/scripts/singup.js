@@ -1,3 +1,4 @@
+import { ApiRequests } from "./models/api.js"
 
 
 export class SignUp{
@@ -46,6 +47,8 @@ export class LoginPage{
                 password: passwordInput.value,
 
             }
+
+            console.log(data)
 
             ApiRequests.login(data)
         })

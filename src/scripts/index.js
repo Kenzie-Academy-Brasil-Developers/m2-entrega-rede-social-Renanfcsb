@@ -1,13 +1,15 @@
+import { LoginPage, SignUp } from "./singup.js"
+
 const homeBtLogin = document.getElementsByClassName("home-button-login")
 const homeBtRegister = document.getElementsByClassName("home-button-register")
 const homeBody = document.querySelector(".body-login-cadastro")
 
 
 function verificarButton(){
-    for(i=0 ; i<homeBtRegister.length;i++){
+    for(let i=0 ; i<homeBtRegister.length;i++){
         homeBtRegister[i].addEventListener("click",renderRegister)
     }
-    for(i=0 ; i<homeBtLogin.length;i++){
+    for(let i=0 ; i<homeBtLogin.length;i++){
     homeBtLogin[i].addEventListener("click",renderLoginTela)
     }
     
@@ -32,7 +34,8 @@ function renderLoginTela(){
 
     emailInput.id = "email"
     senhaInput.id = "password"
-    buttonRegister.id = "entrar"
+    buttonLogar.id = "entrar"
+    senhaInput.type ="password"
 
     title.innerText="Login"
     emailInput.placeholder="Insira se e-mail"
@@ -52,6 +55,7 @@ function renderLoginTela(){
     loginCard.append(title,emailInput,senhaInput,buttonLogar,textoAux,buttonRegister)
     homeBody.appendChild(loginCard)
 
+    LoginPage.renderLoginPage()
     verificarButton()
 }
 
@@ -74,7 +78,7 @@ function renderRegister(){
     senhaInput.id = "password"
     prof.id = "work_at"
     fotoPerfil.id = "image"
-    buttonRegistrar.id = "Cadastrar"
+    buttonRegistrar.id = "cadastrar"
 
     title.innerText="Cadastro"
     name.placeholder="Insira seu nome"
@@ -100,5 +104,7 @@ function renderRegister(){
     registerCard.append(title,name,emailInput,senhaInput,prof,fotoPerfil,buttonRegistrar,textoAux,buttonIrParaLogin)
     homeBody.appendChild(registerCard)
     verificarButton()
+    SignUp.createNewUser()
 }
 renderLoginTela()
+
