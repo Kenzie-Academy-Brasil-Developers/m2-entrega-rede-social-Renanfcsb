@@ -2,7 +2,6 @@ const homeBtLogin = document.getElementsByClassName("home-button-login")
 const homeBtRegister = document.getElementsByClassName("home-button-register")
 const homeBody = document.querySelector(".body-login-cadastro")
 
-console.log(homeBtLogin)
 
 function verificarButton(){
     for(i=0 ; i<homeBtRegister.length;i++){
@@ -11,6 +10,7 @@ function verificarButton(){
     for(i=0 ; i<homeBtLogin.length;i++){
     homeBtLogin[i].addEventListener("click",renderLoginTela)
     }
+    
 }
 
 function cleanScreen(){
@@ -29,6 +29,10 @@ function renderLoginTela(){
     const buttonLogar = document.createElement("button")
     const textoAux = document.createElement("p")
     const buttonRegister = document.createElement("button")
+
+    emailInput.id = "email"
+    senhaInput.id = "password"
+    buttonRegister.id = "entrar"
 
     title.innerText="Login"
     emailInput.placeholder="Insira se e-mail"
@@ -64,6 +68,13 @@ function renderRegister(){
     const buttonRegistrar = document.createElement("button")
     const textoAux = document.createElement("p")
     const buttonIrParaLogin = document.createElement("button")
+
+    name.id = "username"
+    emailInput.id = "email"
+    senhaInput.id = "password"
+    prof.id = "work_at"
+    fotoPerfil.id = "image"
+    buttonRegistrar.id = "Cadastrar"
 
     title.innerText="Cadastro"
     name.placeholder="Insira seu nome"

@@ -1,3 +1,5 @@
+
+
 export class ApiRequests{
 
     static baseUrl = "https://m2-rede-social.herokuapp.com/api/"
@@ -8,16 +10,22 @@ export class ApiRequests{
     }
 
     static async login(body){
+        console.log("toaqui")
         const userLogin = await fetch(`${this.baseUrl}/users/login`,{
         method: "POST",
         headers: this.headers,
         body: JSON.stringify(body)
+    
     })
     .then(res => res.json())
     .then(res =>{
-        return res
+        localStorage.setItem("@TechPosters:token",res.data.token)
+        localStorage.setItem("@TechPosters:User_id",res.data.user_uuid)
+       
     })
-    .catch(err => console.log(err))
+    .catch(err =>{
+        Notify.create('Usuário ou senha inválidos', 'red')
+        console.log(err)} )
 
     return userLogin
     }
