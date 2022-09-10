@@ -243,4 +243,71 @@ body {
 
 .show-modal {
   display: flex;
-}/*# sourceMappingURL=globalcomponentes.css.map */
+}
+
+body {
+  background-color: #dee2e6;
+}
+
+.home-header {
+  background-color: #212529;
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 5%;
+}
+.home-header .home-button-login {
+  width: 53px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #495057;
+  color: #fffFfF;
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+}
+.home-header .home-button-login:hover {
+  background-color: #868E96;
+}
+.home-header .home-button-register {
+  background-color: #212529;
+  color: #fffFfF;
+  border: none;
+  cursor: pointer;
+}
+
+.login-card {
+  background-color: #fffFfF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 461px;
+  max-height: 659px;
+  margin: 10vh auto;
+  border-radius: 8px;
+  gap: 20px;
+}
+.login-card h1 {
+  margin-top: 10px;
+}
+.login-card > button {
+  width: 85%;
+  height: 38px;
+}
+.login-card > button:focus {
+  width: 85%;
+  background-color: #fffFfF;
+  color: #212529;
+}
+.login-card input {
+  width: 85%;
+  height: 24px;
+}
+.login-card .button-outline-medium {
+  margin-bottom: 25px;
+}
+.login-card p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}/*# sourceMappingURL=index.css.map */

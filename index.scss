@@ -1,0 +1,75 @@
+@import "src/styles/styles/reset";
+@import"src/styles/componentes/cores";
+@import"src/styles/componentes/fonts";
+@import"src/styles/componentes/buttons";
+@import"src/styles/componentes/input";
+@import"src/styles/componentes/textarea";
+@import"src/styles/modais/modal-default";
+
+body{
+    background-color: $grey-4; 
+}
+.home-header{
+    background-color: $grey-1;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+    .home-button-login{
+        width: 53px ;
+        height: 32px;
+        border-radius: 4px;
+        background-color: $grey-2;
+        color:$whiteFixed;
+        font-weight: 400;   
+        font-size: 14px;
+        cursor: pointer;
+        &:hover{
+            background-color: $grey-3;
+        }
+        
+    }
+    .home-button-register{
+        background-color: $grey-1;
+        color: $whiteFixed;
+        border: none;
+        cursor: pointer;
+    }
+    
+}
+.login-card{
+    background-color: $whiteFixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 461px;
+    max-height: 659px;
+    margin: 10vh auto;
+    border-radius: 8px;
+    gap: 20px;
+    h1{
+        margin-top: 10px;
+    }
+    >button{
+        width: 85%;
+        height: 38px;
+        &:focus{
+            width: 85%;
+            background-color: $whiteFixed;
+            color:$grey-1;
+        }
+    }
+    input{
+        width: 85%;
+        height: 24px ;
+    }
+    .button-outline-medium{
+        margin-bottom: 25px;
+    }
+    p{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
