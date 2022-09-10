@@ -1,0 +1,25 @@
+@import "../styles/styles/reset";
+@import"../styles/componentes/cores";
+@import"../styles/componentes/fonts";
+@import"../styles/componentes/buttons";
+@import"../styles/componentes/input";
+@import"../styles/componentes/textarea";
+@import"../styles/modais/modal-default";
+
+body{
+    background-color: $grey-4; 
+}
+.home-header{
+    background-color: $grey-1;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+        
+    .home-button-logout{
+        background-color: $grey-1;
+        color: $whiteFixed;
+        border: none;
+        cursor: pointer;
+    }
+    
+}

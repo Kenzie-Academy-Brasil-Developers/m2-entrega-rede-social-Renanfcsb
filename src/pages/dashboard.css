@@ -302,8 +302,19 @@ body {
   display: flex;
 }
 
-.profile-pic {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-}/*# sourceMappingURL=globalcomponentes.css.map */
+body {
+  background-color: #dee2e6;
+}
+
+.home-header {
+  background-color: #212529;
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 5%;
+}
+.home-header .home-button-logout {
+  background-color: #212529;
+  color: #fffFfF;
+  border: none;
+  cursor: pointer;
+}/*# sourceMappingURL=dashboard.css.map */

@@ -1,3 +1,4 @@
+import { RequestsDashboard } from "../../pages/request.js"
 import { ModalRender } from "../modal.js"
 
 export class ApiRequests{

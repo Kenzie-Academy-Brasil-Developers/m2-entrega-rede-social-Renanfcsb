@@ -201,6 +201,13 @@ body {
   justify-content: flex-end;
   display: flex;
 }
+@media screen and (max-width: 600px) {
+  .modal-background-erro {
+    flex-direction: column-reverse;
+    align-content: center;
+    align-items: center;
+  }
+}
 .modal-background-erro .modal-card-erro {
   background-color: #4263EB;
   border-radius: 8px;
@@ -208,6 +215,12 @@ body {
   color: #fffFfF;
   margin-right: 22px;
   margin-bottom: 44px;
+  max-width: 440px;
+}
+@media screen and (max-width: 600px) {
+  .modal-background-erro .modal-card-erro {
+    margin-top: 80px;
+  }
 }
 .modal-background-erro .modal-card-erro > div h2 {
   font-family: "Inter";
