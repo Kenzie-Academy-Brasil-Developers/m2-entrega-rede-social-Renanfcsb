@@ -189,6 +189,50 @@ body {
   border: 2px solid #4263EB;
 }
 
+.modal-background-erro {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: flex-end;
+  justify-content: flex-end;
+  display: flex;
+}
+.modal-background-erro .modal-card-erro {
+  background-color: #4263EB;
+  border-radius: 8px;
+  padding: 11px 15px;
+  color: #fffFfF;
+  margin-right: 22px;
+  margin-bottom: 44px;
+}
+.modal-background-erro .modal-card-erro > div h2 {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  margin: 20px;
+}
+.modal-background-erro .modal-card-erro > div p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 20px;
+}
+.modal-background-erro .modal-card-erro > button {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-left: 50%;
+  margin-bottom: 10px;
+  border: none;
+  padding: 8px;
+}
+
 .modal-default {
   height: 100%;
   width: 100%;
