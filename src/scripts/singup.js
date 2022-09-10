@@ -48,8 +48,6 @@ export class LoginPage{
 
             }
 
-            console.log(data)
-
             ApiRequests.login(data)
         })
     }

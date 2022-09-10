@@ -1,3 +1,5 @@
+import { ModalRender } from "../modal.js"
+
 export class ApiRequests{
 
     static baseUrl = "https://m2-rede-social.herokuapp.com/api/"
@@ -17,12 +19,19 @@ export class ApiRequests{
     })
     .then(res => res.json())
     .then(res =>{
+    
         if(res.token != null){
             localStorage.setItem("@TechPosters:token",res.token)
             localStorage.setItem("@TechPosters:User_id",res.user_uuid)
             window.location.assign("src/pages/dashboard.html")
         }
-        
+        else{
+            let data = []
+            //data.push("User not found or password invalid !")
+            data.push("Access denied")
+            data.push(res.non_field_errors[0])
+            ModalRender.verifyModal(data)
+        }
        
     })
     .catch(err =>{console.log(err)})

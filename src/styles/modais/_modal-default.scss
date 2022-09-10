@@ -1,4 +1,4 @@
-@mixin modal-default {
+@mixin modal-default($local:center) {
     height: 100%;
     width: 100%;
     background-color: $grey-opacity-1;
@@ -6,10 +6,49 @@
     top: 0;
     left: 0;
     display: none;
-    align-items: center;
-    justify-content: center;
+    align-items: $local;
+    justify-content: $local;
 }
 
+
+.modal-background-erro{
+    @include modal-default(flex-end);
+    display: flex;
+    .modal-card-erro{
+        background-color: $brand-1;
+        border-radius: 8px ;
+        padding: 11px 15px;
+        color: $whiteFixed;
+        margin-right: 22px;
+        margin-bottom: 44px;
+        >div h2{
+            font-family: "Inter";
+            font-weight: 600;
+            font-size: 16px;
+            margin: 20px;
+        }
+        >div p{
+            font-family: "Inter";
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            margin:20px
+        }
+        >button{
+            font-family: "Inter";
+            font-weight: 600;
+            font-size: 16px;
+            border-radius: 4px;
+            
+            margin-left: 50%;
+            margin-bottom: 10px;
+            border: none;
+            padding: 8px
+                
+        }
+}
+    }
+       
 .modal-default{
 
     @include modal-default();
@@ -56,6 +95,8 @@
         }
     }
 }
+
+
 .show-modal{
     display: flex;
 }
