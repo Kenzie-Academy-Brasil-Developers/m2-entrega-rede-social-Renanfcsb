@@ -10,10 +10,12 @@
     line-height: 19px;
     font-weight: 400;
     color: $grey-3;
+    resize: none;
     &:hover{
         border: 2px solid $brand-1;
     }
 }
+
 
 .textarea-default{
     @include textarea-default();

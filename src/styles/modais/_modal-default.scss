@@ -14,13 +14,21 @@
 .modal-background-erro{
     @include modal-default(flex-end);
     display: flex;
+    @media screen and (max-width: 600px) {
+        flex-direction: column-reverse;
+        align-content: center;
+        align-items: center;
+    }
+    
     .modal-card-erro{
+        @media screen and (max-width: 600px) {margin-top: 80px;}
         background-color: $brand-1;
         border-radius: 8px ;
         padding: 11px 15px;
         color: $whiteFixed;
         margin-right: 22px;
         margin-bottom: 44px;
+        max-width: 440px;
         >div h2{
             font-family: "Inter";
             font-weight: 600;
