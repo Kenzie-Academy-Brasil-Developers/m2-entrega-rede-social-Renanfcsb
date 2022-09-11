@@ -1,12 +1,10 @@
-import { RequestsDashboard } from "./request.js"
-
 export class RenderDashboard{
 
-    static profileCard = document.querySelector(".container-principal")
+    static profileCard = document.querySelector(".container-postagem")
 
     static async profile(data){
 
-        const cardAll = document.createElement("div")
+        
         const cardInfo = document.createElement("div")
         const cardcontent = document.createElement("div")
         const pic = document.createElement("img")
@@ -25,6 +23,7 @@ export class RenderDashboard{
         contentPost.className = "textarea-default"
         buttonPost.className = "button-primary"
 
+        buttonPost.innerText = "Postar"
         pic.src=`${data.image}`
         followsNumber.innerText=`${data.followers_amount} seguidores`
         work.innerText = `${data.work_at}`
@@ -32,8 +31,8 @@ export class RenderDashboard{
 
         cardInfo.append(name,followsNumber,work)
         cardcontent.append(pic,cardInfo)
-        cardAll.append(cardcontent,titlePost,contentPost,buttonPost)
-        this.profileCard.appendChild(cardAll)
+        this.profileCard.append(cardcontent,titlePost,contentPost,buttonPost)
+        
 
     }
 

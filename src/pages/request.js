@@ -16,7 +16,7 @@ export class RequestsDashboard{
         
     })
     .then(res => res.json())
-    .then(res => {RenderDashboard.profile(res)})
+    .then(res => {RenderDashboard.profile(res), console.log(res)})
     .catch(err =>{console.log(err)})
 
     }
