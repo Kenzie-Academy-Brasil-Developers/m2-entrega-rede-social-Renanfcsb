@@ -324,13 +324,14 @@ body {
 .container-principal {
   display: flex;
   flex-direction: row;
+  margin: 3% 4% 3% 4%;
+  align-items: flex-start;
 }
 .container-principal .container-postagem {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin: 5% 7% 3.612%;
-  width: 50%;
+  width: 100%;
 }
 .container-principal .container-postagem > div {
   display: flex;
@@ -363,4 +364,68 @@ body {
   color: #4263EB;
   background-color: #EDF2FF;
   border: 1px solid #4263EB;
+}
+
+.container-seguir {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  transition: all 0.5s;
+}
+.container-seguir .header-follows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.container-seguir .header-follows > img {
+  width: 25px;
+  cursor: pointer;
+}
+.container-seguir .card-seguir {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 52px;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+.container-seguir .card-seguir .header-card {
+  display: flex;
+  width: 220px;
+  gap: 10px;
+}
+
+.posts {
+  width: 85%;
+  margin-top: 50px;
+}
+.posts .card-post {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.posts .header-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-right: 20%;
+  margin-bottom: 20px;
+}
+.posts .header-post > img {
+  width: 25px;
+  cursor: pointer;
+}
+.posts .card-post {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.posts .card-post .header-card {
+  width: 100%;
 }/*# sourceMappingURL=dashboard.css.map */
